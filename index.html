@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Animal Shelter | Surver Form</title>
+    <!--FONTS GO UNDER HERE-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> <!--      'Open Sans', sans-serif     -->
+</head>
+<body>
+    <h1 id="title">New-York Animal Shelter <br> Survey Form</h1>
+    <h3 id="description">Thank you for taking the time to adopt an <br> Animal from New-York Animal Shelter!</h3>
+    
+<div id="main">
+    
+    <form id="survey-form" action="https://formspree.io/xayezlrb" method="POST">
+        <label id="name-label" for="name">Name</label>
+        <input type="name" id="name" placeholder="Enter Your Name" target="_blank" required=""><br>
+        <label id="email-label" for="email">Email  </label>  
+        <input type="email" id="email" placeholder="Enter Your Email" target="_blank" required=""> <br>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="10" placeholder="Enter Your Age" target="_blank" required=""> <br>   
+        <div class="form-group">
+            <p>Which type of Animal will you be adopting?</p>
+            <select id="dropdown" name="Animal Type" class="form-control" required="">
+            <option disabled="" selected="" value="">Select Animal Type</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Rabbit">Rabbit</option>
+            <option value="Snake">Snake</option>
+            <option value="Rat">Rat</option>
+            </select>
+            </div>
+            <p>On a scale of 0 to 5, how much would you rate us?</p>
+
+        <label required="">
+            <input name="rating" value="Zero" type="radio" class="input-radio" checked="">0   
+            <input name="rating" value="One" type="radio" class="input-radio" checked="">1 
+            <input name="rating" value="Two" type="radio" class="input-radio" checked="">2
+            <input name="rating" value="Three" type="radio" class="input-radio" checked="">3 
+            <input name="rating" value="Four" type="radio" class="input-radio" checked="">4 
+            <input name="rating" value="Five" type="radio" class="input-radio" checked="">5 <br> <br>
+        </label>
+        <textarea name="message" rows="10" cols="45" placeholder="Enter your message here!" required=""></textarea>
+        <br>
+        <input target="_blank" type="submit" id="submit" method="POST"> <br> <br>
+    </form>
+</div>
+<img src="https://i.ya-webdesign.com/images/cute-cat-png-3.png" alt="cute kitten" id="catimg">
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(https://cdn.hipwallpaper.com/i/7/95/hpXd72.jpg);
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h1, h3{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#survey-form{
+    background-color: rgba(216, 213, 213, 0.651);
+    border-radius: 15px;
+    width: 375px;
+    height: 550px;
+    padding: 25px;
+}
+#name{
+    padding: 5px 100px 5px 0;
+    margin: 5px 0 5px 0;
+}
+#email{
+    padding: 5px 100px 5px 0;
+    margin: 5px 0 5px 5px;
+}
+#number{
+    padding: 5px 30px 5px 0;
+    margin: 5px 0 5px 17px;
+}
+#dropdown{
+    padding: 5px 100px 5px 0;
+    margin: 5px 0 5px 5px;
+}
+#catimg{
+    width: 15%;
+    animation-name: funnycat;
+    animation-duration: 20s;
+    margin-top: -500px;
+    animation-iteration-count: infinite;
+}
+@keyframes funnycat{ 
+    25%{
+        margin-left: 1200px;
+    }
+}
+#submit{
+    background-color: rgb(34, 145, 111);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+#submit:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: ease-in-out 1.3s;
+    padding: 15px;
+}
