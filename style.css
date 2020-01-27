@@ -9,6 +9,10 @@ body{
     flex-direction: row;
     justify-content: center;
 }
+#description{
+    text-align: center;
+    font-size: 23px;
+}
 h1, h3{
     text-align: center;
     color: rgb(0, 0, 0);
@@ -30,8 +34,8 @@ h1, h3{
     margin: 5px 0 5px 5px;
 }
 #number{
-    padding: 5px 30px 5px 0;
-    margin: 5px 0 5px 17px;
+    padding: 5px 150px 5px 0;
+    margin: 5px 50px 5px 17px;
 }
 #dropdown{
     padding: 5px 100px 5px 0;

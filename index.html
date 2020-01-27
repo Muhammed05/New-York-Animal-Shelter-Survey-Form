@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1 id="title">New-York Animal Shelter <br> Survey Form</h1>
-    <h3 id="description">Thank you for taking the time to adopt an <br> Animal from New-York Animal Shelter!</h3>
+    <p id="description">Thank you for taking the time to adopt an <br> Animal from New-York Animal Shelter!</p>
     
 <div id="main">
     
@@ -21,7 +21,7 @@
         <label id="email-label" for="email">Email  </label>  
         <input type="email" id="email" placeholder="Enter Your Email" target="_blank" required=""> <br>
         <label for="number" id="number-label">Age</label>
-        <input type="number" id="number" min="10" placeholder="Enter Your Age" target="_blank" required=""> <br>   
+        <input type="number" id="number" min="10" max="90" placeholder="Age" target="_blank" required="" > <br>   
         <div class="form-group">
             <p>Which type of Animal will you be adopting?</p>
             <select id="dropdown" name="Animal Type" class="form-control" required="">
@@ -33,15 +33,21 @@
             <option value="Rat">Rat</option>
             </select>
             </div>
+            <p>What is your favourite animal?</p>
+            <input name="Cat" value="Zero" type="checkbox" class="input-checkbox"> Cat
+            <input name="Dog" value="Zero" type="checkbox" class="input-checkbox"> Dog
+            <input name="Rat" value="Zero" type="checkbox" class="input-checkbox"> Rat 
+            <input name="Snake" value="Zero" type="checkbox" class="input-checkbox"> Snake
+            <input name="Lizzard" value="Zero" type="checkbox" class="input-checkbox"> Lizzard
             <p>On a scale of 0 to 5, how much would you rate us?</p>
 
         <label required="">
-            <input name="rating" value="Zero" type="radio" class="input-radio" checked="">0   
-            <input name="rating" value="One" type="radio" class="input-radio" checked="">1 
-            <input name="rating" value="Two" type="radio" class="input-radio" checked="">2
-            <input name="rating" value="Three" type="radio" class="input-radio" checked="">3 
-            <input name="rating" value="Four" type="radio" class="input-radio" checked="">4 
-            <input name="rating" value="Five" type="radio" class="input-radio" checked="">5 <br> <br>
+            <input name="rating" value="Zero" type="radio" class="input-radio">0   
+            <input name="rating" value="One" type="radio" class="input-radio">1 
+            <input name="rating" value="Two" type="radio" class="input-radio">2
+            <input name="rating" value="Three" type="radio" class="input-radio">3 
+            <input name="rating" value="Four" type="radio" class="input-radio">4 
+            <input name="rating" value="Five" type="radio" class="input-radio">5 <br> <br>
         </label>
         <textarea name="message" rows="10" cols="45" placeholder="Enter your message here!" required=""></textarea>
         <br>
@@ -49,5 +55,6 @@
     </form>
 </div>
 <img src="https://i.ya-webdesign.com/images/cute-cat-png-3.png" alt="cute kitten" id="catimg">
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
 </body>
 </html>
